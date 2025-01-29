@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="projectOC.css">
+  <title>Scientific Calculator</title>
+</head>
+<body>
+  <div class="main-container d-flex justify-content-center align-items-center vh-100">
+    <div class="calculator border rounded p-3 bg-light">
+      <div id="display" class="display border rounded mb-3 p-2 text-end fs-4 bg-white">0</div>
+      <div class="buttons">
+        <div class="row g-2">
+          <div class="col-3"><button class="btn btn-light w-100" onclick="clearDisplay()">AC</button></div>
+          <div class="col-3"><button class="btn btn-light w-100" onclick="appendOperator('%')">%</button></div>
+          <div class="col-3"><button class="btn btn-light w-100" onclick="calculateSqrt()">√</button></div>
+          <div class="col-3"><button class="btn btn-light w-100" onclick="appendOperator('/')">/</button></div>
+        </div>
+        <div class="row g-2">
+          <div class="col-3"><button class="btn btn-light w-100" onclick="appendNumber(7)">7</button></div>
+          <div class="col-3"><button class="btn btn-light w-100" onclick="appendNumber(8)">8</button></div>
+          <div class="col-3"><button class="btn btn-light w-100" onclick="appendNumber(9)">9</button></div>
+          <div class="col-3"><button class="btn btn-light w-100" onclick="appendOperator('*')">x</button></div>
+        </div>
+        <div class="row g-2">
+          <div class="col-3"><button class="btn btn-light w-100" onclick="appendNumber(4)">4</button></div>
+          <div class="col-3"><button class="btn btn-light w-100" onclick="appendNumber(5)">5</button></div>
+          <div class="col-3"><button class="btn btn-light w-100" onclick="appendNumber(6)">6</button></div>
+          <div class="col-3"><button class="btn btn-light w-100" onclick="appendOperator('-')">-</button></div>
+        </div>
+        <div class="row g-2">
+          <div class="col-3"><button class="btn btn-light w-100" onclick="appendNumber(1)">1</button></div>
+          <div class="col-3"><button class="btn btn-light w-100" onclick="appendNumber(2)">2</button></div>
+          <div class="col-3"><button class="btn btn-light w-100" onclick="appendNumber(3)">3</button></div>
+          <div class="col-3"><button class="btn btn-light w-100" onclick="appendOperator('+')">+</button></div>
+        </div>
+        <div class="row g-2">
+          <div class="col-6"><button class="btn btn-light w-100" onclick="appendNumber(0)">0</button></div>
+          <div class="col-3"><button class="btn btn-light w-100" onclick="appendNumber('.')">.</button></div>
+          <div class="col-3"><button class="btn btn-light w-100" onclick="calculateResult()">=</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="projectOC.js"></script>
+</body>
+</html>

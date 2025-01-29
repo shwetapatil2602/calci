@@ -1,0 +1,16 @@
+.main-container {
+  background-color: #f4f4f4;
+}
+
+.calculator {
+  width: 300px;
+}
+
+.display {
+  height: 60px;
+  overflow-x: auto;
+}
+
+button {
+  height: 60px;
+}
